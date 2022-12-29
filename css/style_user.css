@@ -1,0 +1,211 @@
+/* import google fonts : Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* import google fonts : Caveat */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.menu{
+    height: 100vh;
+    width: 23%;
+    background-color: #251965;
+    left: 0;
+    top: 0;
+    position: fixed;
+    border-right: 5px solid #543ae6;
+}
+
+.logo{
+    margin-top:  20px ;
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+}
+
+.logo p{
+    color: white;
+}
+
+.logo h2{
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.logo h3{
+    color: white;
+}
+
+.content{
+    width: 77%;
+    float: right;
+    display: inline;
+}
+
+nav{
+    background-color: #543ae6 ;
+}
+
+.p-2 a{
+    text-decoration: none;
+}
+
+
+.exit{
+    position: fixed;
+    bottom: 5px;
+    left: 82px;
+}
+
+.exit button {
+    background:none;
+    color: white;
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.exit button:hover{
+    color : #543ae6;
+}
+
+.usernav.ms-auto{
+    height: 40px;
+}
+
+.usernav.ms-auto.ms-auto p {
+    color: white;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-right: 40px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.col-8 table{
+    width: 100%;
+    text-align: start;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.col-8 table tr td{
+   padding:10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.col-4{
+    background: #251965;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: transform 0.5s;;
+    border: 4px solid #543ae6 ;
+}
+
+.col-4 p{
+    color: white;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.col-4 img{
+    width: 150px;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+.col-4 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.hapus{
+    position: absolute;
+    bottom: 15;
+    margin-left: 265px;
+    
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+  }
+  
+  .bg-modal .modal-content {
+    width: 400px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    padding: 30px 0;
+    border: 4px solid #543ae6 ;
+  }
+
+  .pop-bg-modal{
+    visibility: visible;
+  }
+
+  .box{
+    margin-bottom: 10px;
+  }
+  
+  .modal-content .icon{
+    background-color: #251965 ;
+    border-radius: 50%;
+    border: 4px solid #543ae6 ;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: -15%;
+  }
+
+  .modal-content .icon h3{
+    margin: 5px;
+  }
+
+  .modal-content .close{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+  }
+
+  .modal-content .close h3{
+    color: #251965;
+    cursor: pointer;
+  }
+
+  .result{
+    color: white;
+    position: absolute;
+    top:0;
+    width: 100%;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+}

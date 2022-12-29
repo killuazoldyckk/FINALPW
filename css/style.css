@@ -1,0 +1,344 @@
+/* import google fonts : Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* import google fonts : Caveat */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.menu{
+    height: 100vh;
+    width: 23%;
+    background-color: #251965;
+    left: 0;
+    top: 0;
+    position: fixed;
+    border-right: 5px solid #543ae6;
+}
+
+.login-form{
+    width: 270px;
+    margin: 60px 60px 5px 9px;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: rgb(14, 95, 65);
+    border-radius: 10px;
+}
+
+.login-form:hover{
+    background-color: rgb(102, 202, 165);
+    color: rgb(61, 16, 95);
+}
+
+.login-form i{
+    padding-right: 8px;
+}
+
+.login-form p{
+    background-color: green;
+    display: inline-block;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.login-form a{
+    text-decoration: none;
+    color: white;    
+}
+
+.login-form a:hover{
+    color: rgb(178, 242, 197);    
+}
+
+.logo{
+    margin-top:  20px ;
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+}
+
+.logo p{
+    color: white;
+}
+
+.logo h2{
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.logo h3{
+    color: white;
+}
+
+.content{
+    width: 77%;
+    float: right;
+    display: inline;
+}
+
+nav{
+    background-color: #543ae6 ;
+}
+
+nav h5 {
+    color: white;
+    align-items: center;
+}
+/* 
+nav input{
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    height: 27px;
+} */
+
+nav button{
+    background: #543ae6;
+    border: none;
+}
+
+nav i{
+    color: white;
+}
+
+section .container{
+    padding: 0;
+    border-right: 5px solid #543ae6;
+    padding-bottom: -100px;
+}
+
+section h3{
+    margin-top: -80px;
+    color: white;
+}
+
+section svg{
+    margin-top: 38px;
+}
+
+.news{
+    margin-top: -160px;
+    padding-right: 48px;
+    transition: 0.8s;
+}
+
+.news p{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    padding-left: 200px;
+}
+
+.news:hover{
+    transform: translateX(25px);
+}
+
+footer{
+    background-color: #543ae6;
+    color: white;
+}
+
+.exit{
+    position: fixed;
+    bottom: 5px;
+    left: 82px;
+}
+
+.exit button {
+    background:none;
+    color: white;
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.exit button:hover{
+    color : #543ae6;
+}
+
+.usernav.ms-auto{
+    height: 40px;
+}
+
+.usernav.ms-auto.ms-auto p {
+    color: white;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-right: 40px;
+}
+
+.col-8 table{
+    width: 100%;
+    text-align: start;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.col-8 table tr td{
+   padding:10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.col-4{
+    background: #251965;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: transform 0.5s;;
+    border: 4px solid #543ae6 ;
+}
+
+.col-4 p{
+    color: white;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.col-4 img{
+    width: 150px;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+.col-4 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.profil .hapus{
+    position: absolute;
+    bottom: 0;
+    margin-left: 265px;
+    
+}
+
+.card{
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+#program{
+    background-color:#543ae6 ;
+    display: block;
+    height: 550px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#program h3{
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 2rem;
+}
+
+
+#program .d-md-flex flex-row justify-content-md-between{
+    margin: 0px 10px;
+}
+
+.p-2 a{
+    text-decoration: none;
+}
+
+.az p{
+    color: rgb(125, 120, 120);
+}
+
+.az p:hover{
+    color: white;
+}
+
+#program .az{
+    background-color: #251965; 
+}
+
+#program .az:hover{
+    background-color: rgb(125, 120, 120);
+}
+
+#program .az h4{
+    color: white;
+    padding-bottom: -20px;
+}
+
+#visi{
+    height: 100vh;
+}
+
+#visi h3{
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 4rem;
+}
+
+#visi h4{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#visi h4:hover{
+    color: #543ae6;
+}
+
+#contact{
+    height: 100vh;
+    background: #543ae6 ;
+    margin-top: 180px;
+}
+
+#contact .container{
+    padding-top: 7em;
+}
+
+#contact h3{
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 2rem;
+    padding-top: 2em;
+    color: #fff;
+}
+
+#contact i{
+    font-size: 40px;
+    color: #543ae6;
+    filter: grayscale(20);
+}
+
+#contact h4{
+    color: white;
+}
+
+#contact i:hover{
+    color: #fff;
+}
+
+#contact a{
+    text-decoration: none;
+    color: white;
+}
+
+#contact a:hover{
+    color: white;
+}
+
+footer{
+    padding: 20px;
+}

@@ -15,11 +15,9 @@ if(isset($_POST['submit'])){
       $_SESSION['user_id'] = $row['nim'];
       header('location:user.php');
    }else{
-      $message[] = 'incorrect password or email!';
+      $message[] = 'nim atau password anda salah!';
    }
-
 }
-
 ?>
 
 <!DOCTYPE html>

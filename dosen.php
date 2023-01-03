@@ -30,8 +30,12 @@ if(isset($_POST['simpan'])){
     }
 
     }
- ?>
 
+if(isset($_GET['hapus'])){
+    $hapus_nim = $_GET['hapus'];
+    mysqli_query($conn, "DELETE FROM `mahasiswa` WHERE nim = '$hapus_nim'") or die('query failed');
+    header('location:dosen.php');
+    }    
 
 ?>
 
@@ -134,7 +138,6 @@ if(isset($_POST['simpan'])){
         </div>
         <div class="edit m-4 pt-4">
             <h3 class="text-center">Daftar Mahasiswa</h3>
-            <p class="text-center"><a href="?hal=pegawai_tambah" class="btn btn-primary">Tambah</a></p>
             <table class="table">
                 <thead>
                     <tr>
@@ -162,8 +165,7 @@ if(isset($_POST['simpan'])){
                         <td><?php echo $fetch_user['jenis_kelamin'];?></td>
                         <td><?php echo $fetch_user['fakultas'];?></td>
                         <td>
-                            <a class="btn btn-warning" onclick="openPopup()"> Edit</a>
-                            <a href="hapus_user.php?nim=<?php echo $fetch_user['nim'];?>" class="btn btn-danger"> Hapus</a>
+                            <a href="dosen.php?hapus=<?php echo $fetch_user['nim']; ?>" class="btn btn-danger" onclick="return confirm('Hapus data mahasiswa ini?');"> Hapus</a>
                         </td>
                     </tr>
                     <?php 
@@ -172,64 +174,6 @@ if(isset($_POST['simpan'])){
                 </tbody>
             </table>
         </div>
-        <div class="bg-modal" id="modal"> 
-            <div class="modal-content">
-                <div class="close">
-                    <h3><a><i class="fa fa-window-close" aria-hidden="true" onclick="closePopup()"></i></a></h3>
-                </div>
-                <div class="icon">
-                    <h3><i class="fas fa-edit"></i></h3>
-                </div>
-                <h3 class="text-center mb-3">Edit Data</h3>
-                <form method="post">  
-                    <table>
-                        <tr>
-                            <td><input class="box" type="hidden" name="nim" value="<?php echo $fetch_user['nim']; ?>"></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Nama<i class="fa fa-close" style="color: red;"></i></td>
-                            <td> : <input class="box" type="text" name="nama" value="<?php echo $fetch_user['nama']; ?>"></td>
-                        </tr>
-                        <tr>
-                            <?php
-                            if($fetch_user['jenis_kelamin'] == "L"){
-                                $l = " checked";
-                                $p = "";
-                            }else {
-                                $l = "";
-                                $p = " checked";
-                            }
-                            ?>
-                            <td class="jk text-start">Jenis_Kelamin</td>
-                            <td>: 
-                                <input type="radio" name="jk" value="L" <?php echo $l ?>> Laki-Laki
-                                <input type="radio" name="jk" value="P" <?php echo $p ?>> Perempuan
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Fakultas</td>
-                            <td> : <input class="box" type="text" name="fak" value="<?php echo $fetch_user['fakultas']; ?>"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <button type="submit" class="btn btn-success text-center" name="simpan">Simpan</button>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-        </div>
     </div>
-    <script>
-        let popup = document.getElementById("modal");
-        function openPopup(){
-            popup.classList.add("pop-bg-modal");
-        }
-        function closePopup(){
-            popup.classList.remove("pop-bg-modal");
-        }
-    </script>
-    
-
 </body>
 </html>

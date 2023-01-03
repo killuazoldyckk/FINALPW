@@ -15,6 +15,11 @@ if(isset($_GET['logout'])){
     header('location:index.php');
 };
 
+if(isset($_GET['hapus'])){
+    mysqli_query($conn, "DELETE FROM `mahasiswa` WHERE nim = '$user_id'") or die('query failed');
+    header('location:index.php');
+ }
+
 if(isset($_POST['simpan'])){
 
     $query = mysqli_query($conn, "UPDATE mahasiswa SET 
@@ -134,7 +139,7 @@ if(isset($_POST['simpan'])){
                             <td colspan="2" class="text-center"><a class="btn btn-warning" onclick="openPopup()"> Edit </a></td>
                         </tr>
                     </table>
-                    <h2 class="hapus btn btn-danger">Hapus Akun</h2>
+                    <a href="user.php?hapus" onclick="return confirm('Anda yakin ingin menghapus akun?');" class="hapus btn btn-danger">Hapus Akun</a>
                 </div>
                 <div class="col-4 p-2">
                     <p class="mb-0">Foto Profil</p>

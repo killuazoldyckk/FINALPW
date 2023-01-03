@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Universitas Sumatera Utara</title>
 
     <!-- import custom css -->
     <link rel="stylesheet" href="css/style.css">
@@ -77,7 +77,10 @@
                 <img src="images/bg.png" width="100%">
             </div>
             <h3 class="text-center">Kolaborasi Menuju Indonesia Maju</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#543ae6 " fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,96C384,128,480,224,576,256C672,288,768,256,864,229.3C960,203,1056,181,1152,176C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#543ae6 " fill-opacity="1" 
+            d="M0,128L48,112C96,96,192,64,288,96C384,128,480,224,576,256C672,288,768,256,864,229.3C960,203,1056,181,
+            1152,176C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,
+            0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
         </section>
 
         <!-- news -->
@@ -189,7 +192,5 @@
     <!-- link to bootsrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
-
 </body>
 </html>

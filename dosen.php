@@ -15,22 +15,6 @@ if(isset($_GET['logout'])){
     header('location:index.php');
 };
 
-if(isset($_POST['simpan'])){
-
-    $query = mysqli_query($conn, "UPDATE mahasiswa SET 
-            nama            ='$_POST[nama]',
-            jenis_kelamin   ='$_POST[jk]',
-            fakultas        ='$_POST[fak]' WHERE nim='$_POST[nim]' ");
-    if ($query){
-        $message[] = '<h4 class="result">data berhasil diupdate!</h4>';
-        echo "<meta http-equiv='refresh' url=user.php'>";
-    } else {
-        $message[] = '<h4 class="result">data gagal diupdate!</h4>';
-        echo mysqli_error();
-    }
-
-    }
-
 if(isset($_GET['hapus'])){
     $hapus_nim = $_GET['hapus'];
     mysqli_query($conn, "DELETE FROM `mahasiswa` WHERE nim = '$hapus_nim'") or die('query failed');
